@@ -28,7 +28,7 @@
 ## パッケージ管理
 
 - パッケージ管理には必ず pnpm を使ってください。npm / npx は使わず、`pnpm exec` / `pnpm dlx` を使ってください。
-- `@morinoparty/hagaki` は GitHub Packages から取得します (`.npmrc` で `@morinoparty` スコープを `https://npm.pkg.github.com` に向けている)。ローカルでは `read:packages` を持つトークンが `~/.npmrc` に必要です。
+- `@morinoparty/hagaki` は npm (registry.npmjs.org) で公開されているので、認証なしで取得できます。
 - `pnpm-workspace.yaml` の `minimumReleaseAgeExclude` には、リリース直後でも入れる必要のある版 (cf, wrangler, hagaki など) を列挙しています。これらの版を上げるときは合わせて更新してください。
 
 ## ビルド・確認コマンド

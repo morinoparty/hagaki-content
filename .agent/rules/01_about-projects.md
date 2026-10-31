@@ -33,7 +33,7 @@ HAGAKI_CDN_BASE_URL=https://hagaki-content.<subdomain>.workers.dev
 
 ## 主な技術スタック
 - TypeScript (`typescript` ^7、`tsc` で型チェックのみ。`noEmit`)
-- `@morinoparty/hagaki` (content の生成と content worker。GitHub Packages から取得)
+- `@morinoparty/hagaki` (content の生成と content worker。npm から取得)
 - Cloudflare Workers + Static Assets
 - `cf` CLI (`cf` 1.0.0-beta.20。Worker 設定は `cloudflare.config.ts`) と wrangler (`wrangler.config.ts` のビルド設定)
 - Node.js 26.12 以上 (cf の対応範囲)、pnpm 12 (`packageManager: pnpm@12.14.0`)
