@@ -26,7 +26,7 @@ wrangler.config.ts       # ビルド設定 (build.command = hagaki generate, ass
 - 生成物は `cf dev` / `cf build` の前に `wrangler.config.ts` の build.command (`hagaki generate`) が作り、git にはコミットしません。単体で作るときは `pnpm run generate`。
   `info.json` の履歴は git log から作るので、浅い clone では欠けます。
 - worker を通るのは `/article/*` だけで、それ以外は Assets から直接返します。
-- hagaki は GitHub Packages の `@morinoparty/hagaki` に依存しています (`.npmrc` で `@morinoparty` スコープを GitHub Packages に向けている。ローカルでは `read:packages` を持つトークンが `~/.npmrc` に必要)。
+- hagaki は npm の `@morinoparty/hagaki` に依存しています。
 
 ## ローカル開発
 
